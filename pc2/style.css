@@ -1,0 +1,337 @@
+/* ==========================================
+   整個網頁
+========================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    color: #333;
+
+    /* 使用你資料夾裡的背景圖 */
+    background-image: url("images/body_bg.gif");
+    background-repeat: repeat;
+}
+
+
+/* ==========================================
+   網頁外框
+========================================== */
+
+.page-wrapper {
+    width: 90%;
+    max-width: 500px;
+
+    margin: 30px auto;
+
+    background-color: #fff;
+
+    border: 10px solid #7b0000;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   Header
+========================================== */
+
+header {
+    background-color: #7b0000;
+}
+
+
+/* ==========================================
+   Bootstrap Navbar
+========================================== */
+
+.navbar {
+    padding: 8px 10px;
+}
+
+
+/* ==========================================
+   Logo
+========================================== */
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar-brand img {
+    width: 145px;
+    height: auto;
+    display: block;
+}
+
+
+/* ==========================================
+   導覽列
+========================================== */
+
+.navbar-nav {
+    align-items: center;
+}
+
+
+.nav-link {
+    color: #fff !important;
+
+    font-size: 12px;
+
+    padding: 5px 7px !important;
+
+    text-decoration: none;
+}
+
+
+.nav-link:hover {
+    color: #ddd !important;
+}
+
+
+/* ==========================================
+   Bootstrap 手機漢堡按鈕
+========================================== */
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+/* ==========================================
+   Banner
+========================================== */
+
+.banner {
+    padding: 8px 8px 0 8px;
+}
+
+
+.banner img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    /* 黑白效果 */
+    filter: grayscale(100%);
+}
+
+
+/* ==========================================
+   黃色標語
+========================================== */
+
+.tagline {
+    margin: 8px 8px 0 8px;
+
+    padding: 7px 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    background-image: url("images/tagline_bg.gif");
+    background-repeat: repeat-x;
+
+    border: 1px solid #ddd;
+}
+
+
+/* ==========================================
+   Main
+========================================== */
+
+main {
+    padding: 15px 8px !important;
+}
+
+
+/* ==========================================
+   左邊 Our Work
+========================================== */
+
+.work-section {
+    padding-right: 10px;
+}
+
+
+.work-section h2 {
+    margin: 0;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.work-section hr {
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+
+/* ==========================================
+   四張作品圖片
+========================================== */
+
+.work-images {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+
+.work-images .col-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+
+    margin-bottom: 10px;
+}
+
+
+.work-images img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    border: 1px solid #ccc;
+
+    padding: 3px;
+
+    background-color: #fff;
+}
+
+
+/* ==========================================
+   右邊 Welcome
+========================================== */
+
+.welcome-section {
+    padding-left: 10px;
+}
+
+
+.welcome-section h1 {
+    margin: 0 0 8px 0;
+
+    font-size: 20px;
+
+    line-height: 1.1;
+
+    font-weight: bold;
+}
+
+
+.welcome-section p {
+    margin-bottom: 9px;
+
+    font-size: 12px;
+
+    line-height: 1.35;
+}
+
+
+/* ==========================================
+   右邊連結
+========================================== */
+
+.welcome-section a {
+    color: #333;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.welcome-section a:hover {
+    color: #7b0000;
+}
+
+
+/* ==========================================
+   Footer
+========================================== */
+
+footer {
+    margin: 0 8px 8px 8px;
+
+    padding: 10px;
+
+    background-color: #eee;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   Bootstrap 響應式
+   md = 768px
+========================================== */
+
+@media (max-width: 767.98px) {
+
+    /* 手機時整個網頁貼近畫面 */
+    .page-wrapper {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+
+        border-width: 5px;
+    }
+
+
+    /* Logo 稍微縮小 */
+    .navbar-brand img {
+        width: 125px;
+    }
+
+
+    /* 手機版選單 */
+    .navbar-nav {
+        align-items: flex-start;
+    }
+
+
+    .nav-link {
+        padding: 8px 0 !important;
+    }
+
+
+    /* 左右欄在手機上下排列 */
+    .work-section {
+        padding-right: 8px;
+    }
+
+
+    .welcome-section {
+        padding-left: 8px;
+
+        margin-top: 15px;
+    }
+
+
+    .welcome-section h1 {
+        font-size: 18px;
+    }
+
+
+    .tagline {
+        font-size: 11px;
+    }
+
+}
